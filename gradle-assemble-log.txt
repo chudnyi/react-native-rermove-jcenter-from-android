@@ -1,0 +1,509 @@
+./gradlew assembleProductionRelease --refresh-dependencies
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'App'.
+> Could not resolve all artifacts for configuration ':classpath'.
+   > Could not resolve com.google.flatbuffers:flatbuffers-java:1.12.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+      > Could not resolve com.google.flatbuffers:flatbuffers-java:1.12.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.tensorflow:tensorflow-lite-metadata:0.1.0-rc2.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+      > Could not resolve org.tensorflow:tensorflow-lite-metadata:0.1.0-rc2.
+         > Could not get resource 'https://jcenter.bintray.com/org/tensorflow/tensorflow-lite-metadata/0.1.0-rc2/tensorflow-lite-metadata-0.1.0-rc2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/tensorflow/tensorflow-lite-metadata/0.1.0-rc2/tensorflow-lite-metadata-0.1.0-rc2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.31.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:aaptcompiler:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.lint:lint-gradle-api:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:gradle-api:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:builder-model:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:common:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:manifest-merger:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.analytics-library:tracker:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.lint:lint-gradle-api:27.2.0 > com.android.tools.lint:lint-model:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0 > com.android.tools:repository:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0 > com.android.tools.analytics-library:shared:27.2.0
+      > Could not resolve org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.31.
+         > Could not get resource 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.31/kotlin-stdlib-jdk8-1.4.31.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.31/kotlin-stdlib-jdk8-1.4.31.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:gradle-api:4.2.0
+      > Could not resolve org.ow2.asm:asm:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm/7.0/asm-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm/7.0/asm-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm-analysis:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+      > Could not resolve org.ow2.asm:asm-analysis:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm-analysis/7.0/asm-analysis-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm-analysis/7.0/asm-analysis-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm-commons:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve org.ow2.asm:asm-commons:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm-commons/7.0/asm-commons-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm-commons/7.0/asm-commons-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm-util:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve org.ow2.asm:asm-util:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm-util/7.0/asm-util-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm-util/7.0/asm-util-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve net.sf.jopt-simple:jopt-simple:4.9.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve net.sf.jopt-simple:jopt-simple:4.9.
+         > Could not get resource 'https://jcenter.bintray.com/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.pom'.
+            > Could not GET 'https://jcenter.bintray.com/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve net.sf.proguard:proguard-gradle:6.0.3.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+      > Could not resolve net.sf.proguard:proguard-gradle:6.0.3.
+         > Could not get resource 'https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/6.0.3/proguard-gradle-6.0.3.pom'.
+            > Could not GET 'https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/6.0.3/proguard-gradle-6.0.3.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.squareup:javapoet:1.10.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+      > Could not resolve com.squareup:javapoet:1.10.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/squareup/javapoet/1.10.0/javapoet-1.10.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/squareup/javapoet/1.10.0/javapoet-1.10.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.protobuf:protobuf-java:3.10.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:aapt2-proto:4.2.0-7147631
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.ddms:ddmlib:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.analytics-library:protos:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.analytics-library:tracker:27.2.0
+      > Could not resolve com.google.protobuf:protobuf-java:3.10.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.10.0/protobuf-java-3.10.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.10.0/protobuf-java-3.10.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.protobuf:protobuf-java-util:3.10.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+      > Could not resolve com.google.protobuf:protobuf-java-util:3.10.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java-util/3.10.0/protobuf-java-util-3.10.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java-util/3.10.0/protobuf-java-util-3.10.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.crypto.tink:tink:1.3.0-rc2.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0
+      > Could not resolve com.google.crypto.tink:tink:1.3.0-rc2.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/crypto/tink/tink/1.3.0-rc2/tink-1.3.0-rc2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/crypto/tink/tink/1.3.0-rc2/tink-1.3.0-rc2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.code.gson:gson:2.8.6.
+     Required by:
+         project : > com.google.gms:google-services:4.3.8
+      > Could not resolve com.google.code.gson:gson:2.8.6.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.guava:guava:29.0-jre.
+     Required by:
+         project : > com.google.gms:google-services:4.3.8
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+         project : > com.google.gms:google-services:4.3.8 > com.google.android.gms:strict-version-matcher-plugin:1.2.2
+      > Could not resolve com.google.guava:guava:29.0-jre.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.guava:guava:29.0-jre.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+      > Could not resolve com.google.guava:guava:29.0-jre.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.api-client:google-api-client:1.30.9.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+      > Could not resolve com.google.api-client:google-api-client:1.30.9.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/api-client/google-api-client/1.30.9/google-api-client-1.30.9.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/api-client/google-api-client/1.30.9/google-api-client-1.30.9.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve commons-cli:commons-cli:1.4.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+         project : > com.google.firebase:firebase-crashlytics-gradle:2.7.1 > com.google.firebase:firebase-crashlytics-buildtools:2.7.1
+      > Could not resolve commons-cli:commons-cli:1.4.
+         > Could not get resource 'https://jcenter.bintray.com/commons-cli/commons-cli/1.4/commons-cli-1.4.pom'.
+            > Could not GET 'https://jcenter.bintray.com/commons-cli/commons-cli/1.4/commons-cli-1.4.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.code.gson:gson:2.8.6.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:manifest-merger:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0 > com.android.tools.analytics-library:shared:27.2.0
+      > Could not resolve com.google.code.gson:gson:2.8.6.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.oauth-client:google-oauth-client:1.31.0.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+      > Could not resolve com.google.oauth-client:google-oauth-client:1.31.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client/1.31.0/google-oauth-client-1.31.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client/1.31.0/google-oauth-client-1.31.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.oauth-client:google-oauth-client-java6:1.31.0.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+      > Could not resolve com.google.oauth-client:google-oauth-client-java6:1.31.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-java6/1.31.0/google-oauth-client-java6-1.31.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-java6/1.31.0/google-oauth-client-java6-1.31.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.oauth-client:google-oauth-client-jetty:1.31.0.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+      > Could not resolve com.google.oauth-client:google-oauth-client-jetty:1.31.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-jetty/1.31.0/google-oauth-client-jetty-1.31.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/oauth-client/google-oauth-client-jetty/1.31.0/google-oauth-client-jetty-1.31.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.http-client:google-http-client-jackson2:1.34.2.
+     Required by:
+         project : > com.google.firebase:firebase-appdistribution-gradle:2.1.3
+      > Could not resolve com.google.http-client:google-http-client-jackson2:1.34.2.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/http-client/google-http-client-jackson2/1.34.2/google-http-client-jackson2-1.34.2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/http-client/google-http-client-jackson2/1.34.2/google-http-client-jackson2-1.34.2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.squareup:javawriter:2.5.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve com.squareup:javawriter:2.5.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.bouncycastle:bcpkix-jdk15on:1.56.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:apkzlib:4.2.0
+      > Could not resolve org.bouncycastle:bcpkix-jdk15on:1.56.
+         > Could not get resource 'https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.bouncycastle:bcprov-jdk15on:1.56.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:apkzlib:4.2.0
+      > Could not resolve org.bouncycastle:bcprov-jdk15on:1.56.
+         > Could not get resource 'https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm-tree:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve org.ow2.asm:asm-tree:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm-tree/7.0/asm-tree-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm-tree/7.0/asm-tree-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve javax.inject:javax.inject:1.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+      > Could not resolve javax.inject:javax.inject:1.
+         > Could not get resource 'https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom'.
+            > Could not GET 'https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve it.unimi.dsi:fastutil:8.4.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve it.unimi.dsi:fastutil:8.4.0.
+         > Could not get resource 'https://jcenter.bintray.com/it/unimi/dsi/fastutil/8.4.0/fastutil-8.4.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/it/unimi/dsi/fastutil/8.4.0/fastutil-8.4.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.googlecode.json-simple:json-simple:1.1.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0
+      > Could not resolve com.googlecode.json-simple:json-simple:1.1.
+         > Could not get resource 'https://jcenter.bintray.com/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.guava:guava:29.0-jre.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:aaptcompiler:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.analytics-library:crash:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.lint:lint-gradle-api:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:gradle-api:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:common:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.analytics-library:tracker:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0 > com.android.tools.analytics-library:shared:27.2.0
+      > Could not resolve com.google.guava:guava:29.0-jre.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.apache.httpcomponents:httpmime:4.5.6.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.analytics-library:crash:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0
+      > Could not resolve org.apache.httpcomponents:httpmime:4.5.6.
+         > Could not get resource 'https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.apache.httpcomponents:httpcore:4.4.10.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.analytics-library:crash:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0
+      > Could not resolve org.apache.httpcomponents:httpcore:4.4.10.
+         > Could not get resource 'https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.apache.httpcomponents:httpclient:4.5.6.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.analytics-library:crash:27.2.0
+         project : > com.google.firebase:firebase-crashlytics-gradle:2.7.1 > com.google.firebase:firebase-crashlytics-buildtools:2.7.1
+      > Could not resolve org.apache.httpcomponents:httpclient:4.5.6.
+         > Could not get resource 'https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jetbrains.kotlin:kotlin-reflect:1.4.31.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.lint:lint-gradle-api:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+      > Could not resolve org.jetbrains.kotlin:kotlin-reflect:1.4.31.
+         > Could not get resource 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-reflect/1.4.31/kotlin-reflect-1.4.31.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-reflect/1.4.31/kotlin-reflect-1.4.31.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.antlr:antlr4:4.5.3.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+      > Could not resolve org.antlr:antlr4:4.5.3.
+         > Could not get resource 'https://jcenter.bintray.com/org/antlr/antlr4/4.5.3/antlr4-4.5.3.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/antlr/antlr4/4.5.3/antlr4-4.5.3.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve commons-io:commons-io:2.6.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+      > Could not resolve commons-io:commons-io:2.6.
+         > Could not get resource 'https://jcenter.bintray.com/commons-io/commons-io/2.6/commons-io-2.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/commons-io/commons-io/2.6/commons-io-2.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.googlecode.juniversalchardet:juniversalchardet:1.0.3.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+      > Could not resolve com.googlecode.juniversalchardet:juniversalchardet:1.0.3.
+         > Could not get resource 'https://jcenter.bintray.com/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.glassfish.jaxb:jaxb-runtime:2.3.2.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > androidx.databinding:databinding-compiler-common:4.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0 > com.android.tools:repository:27.2.0
+      > Could not resolve org.glassfish.jaxb:jaxb-runtime:2.3.2.
+         > Could not get resource 'https://jcenter.bintray.com/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.auto.value:auto-value-annotations:1.6.2.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+      > Could not resolve com.google.auto.value:auto-value-annotations:1.6.2.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/auto/value/auto-value-annotations/1.6.2/auto-value-annotations-1.6.2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/auto/value/auto-value-annotations/1.6.2/auto-value-annotations-1.6.2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.errorprone:error_prone_annotations:2.3.1.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+      > Could not resolve com.google.errorprone:error_prone_annotations:2.3.1.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.protobuf:protobuf-java:3.10.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+      > Could not resolve com.google.protobuf:protobuf-java:3.10.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.10.0/protobuf-java-3.10.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.10.0/protobuf-java-3.10.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.protobuf:protobuf-java-util:3.10.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+      > Could not resolve com.google.protobuf:protobuf-java-util:3.10.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java-util/3.10.0/protobuf-java-util-3.10.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/protobuf/protobuf-java-util/3.10.0/protobuf-java-util-3.10.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.dagger:dagger:2.28.3.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:bundletool:1.1.0
+      > Could not resolve com.google.dagger:dagger:2.28.3.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/dagger/dagger/2.28.3/dagger-2.28.3.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/dagger/dagger/2.28.3/dagger-2.28.3.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.code.gson:gson:2.8.6.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-core:1.0.0-beta09
+      > Could not resolve com.google.code.gson:gson:2.8.6.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jetbrains.kotlin:kotlin-stdlib:1.3.60.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-core:1.0.0-beta09
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta09
+      > Could not resolve org.jetbrains.kotlin:kotlin-stdlib:1.3.60.
+         > Could not get resource 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.60/kotlin-stdlib-1.3.60.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.60/kotlin-stdlib-1.3.60.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta09
+      > Could not resolve org.ow2.asm:asm:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm/7.0/asm-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm/7.0/asm-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm-util:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta09
+      > Could not resolve org.ow2.asm:asm-util:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm-util/7.0/asm-util-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm-util/7.0/asm-util-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.ow2.asm:asm-commons:7.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta09
+      > Could not resolve org.ow2.asm:asm-commons:7.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/ow2/asm/asm-commons/7.0/asm-commons-7.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/ow2/asm/asm-commons/7.0/asm-commons-7.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jdom:jdom2:2.0.6.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta09
+      > Could not resolve org.jdom:jdom2:2.0.6.
+         > Could not get resource 'https://jcenter.bintray.com/org/jdom/jdom2/2.0.6/jdom2-2.0.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jdom/jdom2/2.0.6/jdom2-2.0.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.code.findbugs:jsr305:3.0.2.
+     Required by:
+         project : > com.google.gms:google-services:4.3.8 > com.google.android.gms:strict-version-matcher-plugin:1.2.2
+      > Could not resolve com.google.code.findbugs:jsr305:3.0.2.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.31.
+     Required by:
+         project : > com.google.gms:google-services:4.3.8 > com.google.android.gms:strict-version-matcher-plugin:1.2.2
+      > Could not resolve org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.31.
+         > Could not get resource 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.31/kotlin-stdlib-jdk8-1.4.31.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.31/kotlin-stdlib-jdk8-1.4.31.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve commons-io:commons-io:2.6.
+     Required by:
+         project : > com.google.firebase:firebase-crashlytics-gradle:2.7.1 > com.google.firebase:firebase-crashlytics-buildtools:2.7.1
+      > Could not resolve commons-io:commons-io:2.6.
+         > Could not get resource 'https://jcenter.bintray.com/commons-io/commons-io/2.6/commons-io-2.6.pom'.
+            > Could not GET 'https://jcenter.bintray.com/commons-io/commons-io/2.6/commons-io-2.6.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.guava:guava:29.0-jre.
+     Required by:
+         project : > com.google.firebase:firebase-crashlytics-gradle:2.7.1 > com.google.firebase:firebase-crashlytics-buildtools:2.7.1
+      > Could not resolve com.google.guava:guava:29.0-jre.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.apache.commons:commons-compress:1.12.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0 > com.android.tools:repository:27.2.0
+      > Could not resolve org.apache.commons:commons-compress:1.12.
+         > Could not get resource 'https://jcenter.bintray.com/org/apache/commons/commons-compress/1.12/commons-compress-1.12.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/apache/commons/commons-compress/1.12/commons-compress-1.12.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jetbrains.intellij.deps:trove4j:1.0.20181211.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+      > Could not resolve org.jetbrains.intellij.deps:trove4j:1.0.20181211.
+         > Could not get resource 'https://jcenter.bintray.com/org/jetbrains/intellij/deps/trove4j/1.0.20181211/trove4j-1.0.20181211.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jetbrains/intellij/deps/trove4j/1.0.20181211/trove4j-1.0.20181211.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve xerces:xercesImpl:2.12.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0
+      > Could not resolve xerces:xercesImpl:2.12.0.
+         > Could not get resource 'https://jcenter.bintray.com/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve net.sf.kxml:kxml2:2.3.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:manifest-merger:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.ddms:ddmlib:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:aaptcompiler:4.2.0 > com.android.tools.layoutlib:layoutlib-api:27.2.0
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.lint:lint-gradle-api:27.2.0 > com.android.tools.lint:lint-model:27.2.0
+      > Could not resolve net.sf.kxml:kxml2:2.3.0.
+         > Could not get resource 'https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.code.findbugs:jsr305:3.0.2.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:apkzlib:4.2.0
+      > Could not resolve com.google.code.findbugs:jsr305:3.0.2.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.guava:guava:29.0-jre.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools.build:apkzlib:4.2.0
+      > Could not resolve com.google.guava:guava:29.0-jre.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/guava/guava/29.0-jre/guava-29.0-jre.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve org.jetbrains:annotations:13.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:aaptcompiler:4.2.0 > com.android.tools.layoutlib:layoutlib-api:27.2.0
+      > Could not resolve org.jetbrains:annotations:13.0.
+         > Could not get resource 'https://jcenter.bintray.com/org/jetbrains/annotations/13.0/annotations-13.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/org/jetbrains/annotations/13.0/annotations-13.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.sun.activation:javax.activation:1.2.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0 > com.android.tools:repository:27.2.0
+      > Could not resolve com.sun.activation:javax.activation:1.2.0.
+         > Could not get resource 'https://jcenter.bintray.com/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve com.google.jimfs:jimfs:1.1.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdklib:27.2.0 > com.android.tools:repository:27.2.0
+      > Could not resolve com.google.jimfs:jimfs:1.1.
+         > Could not get resource 'https://jcenter.bintray.com/com/google/jimfs/jimfs/1.1/jimfs-1.1.pom'.
+            > Could not GET 'https://jcenter.bintray.com/com/google/jimfs/jimfs/1.1/jimfs-1.1.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
+   > Could not resolve net.java.dev.jna:jna-platform:5.6.0.
+     Required by:
+         project : > com.android.tools.build:gradle:4.2.0 > com.android.tools.build:builder:4.2.0 > com.android.tools:sdk-common:27.2.0 > com.android.tools.analytics-library:shared:27.2.0
+      > Could not resolve net.java.dev.jna:jna-platform:5.6.0.
+         > Could not get resource 'https://jcenter.bintray.com/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.pom'.
+            > Could not GET 'https://jcenter.bintray.com/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.pom'.
+               > Connect to jcenter.bintray.com:443 [jcenter.bintray.com/0.0.0.0] failed: Connection refused (Connection refused)
